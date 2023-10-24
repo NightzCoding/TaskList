@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+    width: 710px;
+    border: 3px solid #43215F;
+	padding: 0 2em 1em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -355px;
+    margin-top: -250px;
+    display: flex;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        width: auto;
+        margin: 0;
+        border: none;
+        padding: 1em;
+        position: static;
+    }
+}
+
+h1 { 
+    font-size: 150%;
+    color: #43215F;
+    margin-bottom: .5em;
+}
+div {
+    margin-bottom: 1em;
+}
+input {
+    width: 22em;
+    margin-right: 1em;
+    margin-bottom: .5em;
+}
+#tasks {
+    margin-top: 0;
+    float: right;
+}

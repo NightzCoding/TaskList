@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Task List</title>
+    <link type="text/css" rel="stylesheet" href="task_list.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Task List</h1>
+      <div id="tasks">
+        <label for="task_list">Task List</label><br />
+        <textarea id="task_list" rows="6" cols="50"></textarea>
+      </div>
+      <div>
+        <label for="task">Task</label><br />
+        <input type="text" name="task" id="task" />
+      </div>
+      <div>
+        <input
+          type="button"
+          name="add_task"
+          id="add_task"
+          value="Add Task"
+        /><br />
+        <input
+          type="button"
+          name="clear_tasks"
+          id="clear_tasks"
+          value="Clear Tasks"
+        />
+      </div>
+      <p>
+        This code sets up a simple task manager web application using jQuery and
+        the browser's localStorage API. When the document is loaded, it adds
+        event listeners to two HTML elements: #add_task and #clear_tasks. When
+        the #add_task button is clicked, the code checks if the task input field
+        is empty. If it is not empty, it saves the task in the browser's
+        localStorage and adds it to the task list displayed on the page. If it
+        is empty, it shows an alert asking the user to enter a task. When the
+        #clear_tasks button is clicked, the code removes all tasks from
+        localStorage and clears the task list displayed on the page. The code
+        also initializes the task list by loading any saved tasks from
+        localStorage, and it sets the focus to the task input field so the user
+        can start typing right away.
+      </p>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="task_list.js"></script>
+  </body>
+</html>
